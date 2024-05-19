@@ -45,6 +45,42 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Documentations
+```bash
+# Database
+$ postgresql database is used
+
+# entities
+$ There are two entities, the User and Task entity. The have a oneToMany relationship, one user to many tasks.
+
+# validation
+$ There is application side validation using class validators and database application, done on the entities.
+
+# endpoints
+$ There is a based api of /api/v1
+$ 1.  POST   /api/v1/auth/login     ---- signIn
+$ 2.  POST  /api/v1/users   ---- create user
+$ 3.  GET  /api/v1/users   ---- get all users
+$ 4.  GET  /api/v1/user/{id}   ---- get user
+$ 5.  POST  /api/v1/tasks   ---- create task
+$ 6.  GET  /api/v1/tasks   ---- get all tasks
+$ 7.  GET  /api/v1/task/{id}   ---- get task
+$ 8.  DELETE  /api/v1/task/{id}   ---- remove task
+$ 9.  UPDATE  /api/v1/task/{id}   ---- update task
+
+# password
+$ users password is hashed using bcrypt
+
+# jwt token
+$ The authentication is down with jwt token, and all the routes are guarded.
+
+# test coverage
+$ npm run test:cov
+```
+
+
+
+
 ## Test
 
 ```bash
