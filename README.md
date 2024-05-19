@@ -51,10 +51,10 @@ $ npm run start:prod
 $ postgresql database is used
 
 # entities
-$ There are two entities, the User and Task entity. The have a oneToMany relationship, one user to many tasks.
+$ There are two entities, the User and Task entity. They have a oneToMany relationship, one user to many tasks.
 
 # validation
-$ There is application side validation using class validators and database application, done on the entities.
+$ There is application side validation using class validators and database application, on entities.
 
 # endpoints
 $ There is a based api of /api/v1
@@ -69,14 +69,11 @@ $ 8.  DELETE  /api/v1/task/{id}   ---- remove task
 $ 9.  UPDATE  /api/v1/task/{id}   ---- update task
 
 # password
-$ users password is hashed using bcrypt
+$ users passwords are hashed using bcrypt
 
 # jwt token
-$ The authentication is down with jwt token, and all the routes are guarded.
+$ The authentication is done with jwt token, and all the routes are guarded.
 
-# test coverage
-$ npm run test:cov
-```
 
 
 
